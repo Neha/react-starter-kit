@@ -1,14 +1,14 @@
 var React = require('react');
 var ListItem = require('./ListItem.jsx');
 
-var ingredients = [{"id" : "1", "name" : "Apple"},{"id" : "2", "name" : "Ornage"},{"id" : "3", "name" : "Grapes"}];
+var fruits = [{"id" : "1", "name" : "Apple"},{"id" : "2", "name" : "Ornage"},{"id" : "3", "name" : "Grapes"}];
 
 var List = React.createClass({ 
 
 	render : function(){
 
-		var listItems = ingredients.map(function(item){
-			return <ListItem key={item.id} ingredient = {item.name} />;
+		var listItems = fruits.map(function(item){
+			return <ListItem key={item.id} fruit = {item.name} />;
 		});
 
 		return(
